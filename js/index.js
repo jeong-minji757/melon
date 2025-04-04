@@ -68,15 +68,13 @@ $(document).ready(function() {
   eventCount = eventImage.length, 
   eventInterval = 3000;
 
-function eventAni(eventIdx){  
-if (eventOldIdx != eventIdx) {  
-  eventIndicator.eq(eventOldIdx).removeClass("active"); 
-  eventIndicator.eq(eventIdx).addClass("active"); 
-  eventImage.eq(eventOldIdx).stop().fadeOut("300"); 
-  eventImage.eq(eventIdx).stop().fadeIn("300");  
-}
-eventOldIdx = eventIdx; 
-};
+  function eventAni(eventIdx){  
+    eventIndicator.removeClass("active");
+    eventIndicator.eq(eventIdx).addClass("active");
+    eventImage.stop().fadeOut("300");
+    eventImage.eq(eventIdx).stop().fadeIn("300");
+    eventOldIdx = eventIdx; 
+  };
 
 
 function eventAuto() {
