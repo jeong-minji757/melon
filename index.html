@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>melon</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xpressengine/xeicon@2.3.3/xeicon.min.css">
+  <!-- jQuery 라이브러리 추가 -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+  <div class="goto-top">
+    <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+
+  
+    <header>
+      <div class="util-menu">
+        <a href="#none">이용권구매</a>
+        <a href="#none">멜론 라운지</a>
+        <a href="#none">이벤트</a>
+        <a href="#none">공지사항</a>
+      </div>
+      <nav>
+        <div class="top">
+          <div class="logo">
+            <img src="image/logo.png" alt="멜론로고">
+            <div class="menu-wrapper">
+              <div class="side-manu"></div>
+              <ul class="menu-list">
+                <li>멜론 뮤직</li>
+                <li>멜론 티켓</li>
+              </ul>
+            </div>
+          </div>
+          <div class="search">
+            <form>
+              <input type="search" name="search" placeholder="원하는 음악을 검색해보세요">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+          </div>
+          <div class="login">
+            <p>마이뮤직</p>
+          </div>
+        </div>
+        <div class="live">
+          <h3>실시간 키워드</h3>
+          <div class="keyword">
+            <!-- 롤링영역 -->
+            <ol id="keywordList">
+              <li>
+                <p>제니</p>
+                <span>20</span> 
+              </li>
+              <li>
+                <p>WOODZ</p>
+                <span> 5</span>
+              </li>
+              <li>
+                <p>IVE</p>
+                <span>15</span>
+              </li>
+              <li>
+                <p>aespa</p>
+                <span>10</span> 
+              </li>
+              <li>
+                <p>DAY6(데이식스)</p>
+                <span> 1</span> 
+              </li>
+              <li>
+                <p>KillKill(키키)</p>
+                <span>5</span> 
+              </li>
+            </ol>
+          </div>
+        </div>
+        <ul class="gnb">
+          <li class="main"><a href="#none">멜론뮤직</a>
+            <ul class="sub">
+              <li><a href="#none">최신음악</a></li>
+              <li><a href="#none">장르음악</a></li>
+            </ul>
+          </li>
+          <li class="main"><a href="#none">멜론 라이브</a>
+            <ul class="sub">
+              <li><a href="#none">멜론DJ</a></li>
+              <li><a href="#none">멜론TV</a></li>
+            </ul></li>
+          <li class="main"><a href="#none">스타매거진</a>
+            <ul  class="sub">
+              <li><a href="#none">스타포스트</a></li>
+              <li><a href="#none">매거진</a></li>
+            </ul>
+          </li>
+          <li><a href="#none">뮤직어워드</a></li>
+          <li><a href="#none">뮤직웨이브</a></li>
+        </ul>
+        </nav>
+      </header>
+
+    <div id="wrap">
+      <main>
+        <!-- 좌측메인이미지 >> 슬라이드 -->
+          <div class="main-cotainer">
+            <div class="main-img img1">
+              <img src="image/main2.jpg" alt="">
+              <div class="ma1">
+                <span>1</span>
+                <h1>TOO BAD (feat. Anderson .Paak) <em>G-DRAGON</em></h1>
+              </div>
+            </div>
+            <div class="main-img img2">
+              <img src="image/main5.jpg" alt="">
+              <div class="ma2">
+                <span>2</span>
+                <h1>모르시나요(PROD.로코베리) <em>
+                  조째즈</em></h1>
+              </div>
+            </div>
+            <div class="main-img img3">
+              <img src="image/main3.jpg" alt="">
+              <div class="ma3">
+                <span>3</span>
+                <h1>like JENNIE <em>	
+                  제니 (JENNIE)</em></h1>
+              </div>
+            </div>
+            <div class="main-img img4">
+              <img src="image/main4.jpg" alt="">
+              <div class="ma4">
+                <span>4</span>
+                <h1> Drowning <em>WOODZ</em></h1>
+              </div>
+            </div>
+            <div class="main-img img5">
+              <img src="image/main1.jpg" alt="">
+              <div class="ma5">
+                <span>1</span>
+                <h1>HOME SWEET HOME <em>G-DRAGON</em></h1>
+              </div>
+            </div>
+          </div>
+  
+          <!-- top100 -->
+          <div class="chart-tab">
+            <ul class="top-indicator">
+              <li class="top-content">
+                <div class="chart-title">
+                  <h2>멜론 차트</h2>
+                  <p>2025-03-27 09:20 기준</p>
+                </div>
+                <div class="tab">
+                  <span>top100</span>
+                  <span>POP</span>
+                  <span>아티스트</span>
+                </div>
+                  <ul class="car items" id="top100List">
+                    <li class="ind item1" data-rank="1">
+                        <span>1</span>
+                      <div class="rank-img">
+                        <img src="image/rank1.jpg" alt="too bad">
+                      </div>
+                      <div class="rank-content">
+                        <h3>TOO BAD</h3>
+                        <p>G-DRAGON <em>10</em></p>
+                      </div>
+                    </li>
+                    <li class="ind item2" data-rank="2">
+                        <span>2</span>
+                      <div class="rank-img">
+                        <img src="image/rank2.jpg" alt="too bad">
+                      </div>
+                      <div class="rank-content">
+                        <h3>모르시나요</h3>
+                        <p>조째즈 <em>15</em></p>
+                      </div>
+                    </li>
+                    <li class="ind item3" data-rank="3">
+                        <span>3</span>
+                      <div class="rank-img">
+                        <img src="image/rank3.jpg" alt="JENNIE">
+                      </div>
+                      <div class="rank-content">
+                        <h3>like JENNIE </h3>
+                        <p>제니(JENNIE) <em>5</em></p>
+                      </div>
+                    </li>
+                    <li class="ind itme4" data-rank="4">
+                        <span>4</span>
+                      <div class="rank-img">
+                        <img src="image/rank4.jpg" alt="Drowning">
+                      </div>
+                      <div class="rank-content">
+                        <h3>Drowning</h3>
+                        <p>WOODZ</p>
+                      </div>
+                    </li>
+                    <li class="ind item5" data-rank="5">
+                        <span>5</span>
+                      <div class="rank-img">
+                        <img src="image/rank5.jpg" alt="HOME SWEET HOME">
+                      </div>
+                      <div class="rank-content">
+                        <h3>HOME SWEET HOME (feat. 태양, 대성)</h3>
+                        <p>G-DRAGON <em>7</em></p>
+                      </div>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+        </main>
+  
+        <section id="new-info">
+          <div class="evet">
+            <h2>진행 중인 이벤트 🚀</h2>
+            <div class="fade">
+              <!-- Fade Contents -->
+              <div class="fade-items">
+                <ul>
+                  <li><a href="#"><img src="image/event.jpg" alt="image1"></a></li>
+                  <li><a href="#"><img src="image/event2.jpg" alt="image2"></a></li>
+                  <li><a href="#"><img src="image/event3.jpg" alt="image3"></a></li>
+                  <li><a href="#"><img src="image/event4.jpg" alt="image4"></a></li>
+                </ul>
+              </div>
+          
+              <!-- Indicator Button -->
+              <div class="fade-indicator"> 
+                <a href="#none" class="active">1</a>
+                <a href="#none">2</a>
+                <a href="#none">3</a>
+                <a href="#none">4</a>
+              </div>
+          
+            </div>
+            </div>
+          <div class="new-music">
+            <h2>new-music</h2>
+            <ul class="new-music-list">
+              <li class="card new1">
+                <img src="image/new1.jpg" alt="하현상">
+                <div class="new">
+                  <h2>Lost</h2>
+                  <p>하현상</p>
+                  <span></span>
+                </div>
+              </li>
+              <li class="card new2">
+                <img src="image/new2.jpg" alt="AKMU (악뮤)">
+                <div class="new">
+                  <h2>DADA <br> (AKMU X 쿠키런)</h2>
+                  <p>AKMU (악뮤)</p>
+                  <span></span>
+                </div>
+              </li>
+              <li class="card new3">
+                <img src="image/new3.jpg" alt="하현상">
+                <div class="new">
+                  <h2>K-DRAMA KINDA LOVE</h2>
+                  <p>Ann One</p>
+                  <span></span>
+                </div>
+              </li>
+              <li class="card new4">
+                <img src="image/new4.jpg" alt="PRSNT(프레젠트)">
+                <div class="new">
+                  <h2>BLVK</h2>
+                  <p>PRSNT(프레젠트)</p>
+                  <span></span>
+                </div>
+              </li>
+              <li class="card new5">
+                <img src="image/new5.jpg" alt="청하나">
+                <div class="new">
+                  <h2>그대가 사랑한 <br> 모든 걸 사랑하려 해</h2>
+                  <p>청하나</p>
+                  <span></span>
+                </div>
+              </li>
+              <li class="card new6">
+                <img src="image/new6.jpg" alt="심각한 개구리">
+                <div class="new">
+                  <h2>날아라 개구리 !</h2>
+                  <p>심각한 개구리</p>
+                  <span></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+  
+      <section id="recommend">
+        <h2>🎵 음악과 함께 하는 여정 🎧</h2>
+        <ul class="recommend-tab">
+          <li><a href="#none">투데이</a></li>
+          <li><a href="#none">전문가 선곡</a></li>
+          <li><a href="#none">#태그장르</a></li>
+          <li><a href="#none">파워DJ</a></li>
+          <li><a href="#none">인기</a></li>
+        </ul>
+        <div class="recommend-list">
+          <div>
+            <img src="image/today1.png" alt="">
+            <img src="image/today2.png" alt="">
+            <img src="image/today3.png" alt="">
+            <img src="image/today4.png" alt="">
+            <img class="hidd" src="image/today5.png" alt="">
+            <img class="hidd" src="image/today6.png" alt="">
+            <img class="hidd" src="image/today7.png" alt="">
+            <img class="hidd" src="image/today8.png" alt="">
+          </div>
+        </div>
+        <!-- Prev Next Button -->
+        <div class="recommend-side"> 
+          <a class="prev" href="#none"><i class="icon xi-angle-left-thin"></i></a>
+          <a class="next" href="#none"><i class="icon xi-angle-right-thin"></i></a>
+        </div>
+      </section>
+  
+        <section id="artist">
+          <div class="artist-title">
+            <h3>3월 4주차</h3>
+              <h2><em>MELON</em> <br>주간인기상</h2>
+              <h4><mark>남은시간</mark></h4>
+              <p>4일 09 : 12 : 12 </p>
+              <h4><mark>투표수</mark></h4>
+              <p>124,034 </p>
+              <span><a href="#none">투표하러가기</a></span>
+          </div>
+          <div class="artist-list">
+            <div class="artist box1">
+              <img src="image/artist2.jpg" alt="지디">
+              <div class="box-content">
+                <h3>G-DRAGON</h3>
+                <p>too bad</p>
+                <b>35%<em>66,716 득표</em></b>
+                <span></span>
+              </div>
+            </div>
+            <div class="artist box2">
+              <img src="image/artist1.jpg" alt="제이홈 ">
+              <div class="box-content">
+                <h3>j-hope</h3>
+                <p>sweet dream</p>
+                <b>35% <em>65,346 득표</em></b>
+                <em>(1위와 1,370표차)</em>
+              </div>
+            </div>
+            <div class="artist box3">
+              <img src="image/artist3.jpg" alt="보이넥스트도어">
+              <div class="box-content">
+                <h3>G-DRAGON</h3>
+                <p>이렇게 좋아해 본 적이 없어요.</p>
+                <b>10% <em>18,135 득표</em></b>
+                <em>(2위와 47,211표차)</em>
+              </div>
+            </div>
+            <div class="artist box4">
+              <img src="image/artist5.jpg" alt="마크">
+              <div class="box-content">
+                <h3>마크</h3>
+                <p>pressin</p>
+                <b>4% <em>7,912 득표</em></b>
+                <em>(3위와 10,223표차)</em>
+              </div>
+            </div>
+            <div class="artist box5">
+              <img src="image/artist4.jpg" alt="엔믹스">
+              <div class="box-content">
+                <h3>nmixx</h3>
+                <p>know about me</p>
+                <b>4% <em>7,621 득표</em></b>
+                <em>(4위와 291표차)</em>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section id="list-container">
+          <h2>🔥 지금 들어야 할 앨범 📀</h2>
+          <div class="container">
+            <ul>
+              <li class="list1">
+                <img src="image/famous1.jpg" alt="">
+                <div class="list-content">
+                  <h4>Ruby</h4>
+                  <p>제니</p>
+                </div>
+              </li>
+              <li class="list2">
+                <img src="image/famous2.jpg" alt="">
+                <div class="list-content">
+                  <h4>Hot</h4>
+                  <p>LE SSERAFIM</p>
+                </div>
+              </li>
+              <li class="list3">
+                <img src="image/famous3.jpg" alt="">
+                <div class="list-content">
+                  <h4>Ubermensch</h4>
+                  <p>G-DRAGON</p>
+                </div>
+              </li>
+              <li class="list4">
+                <img src="image/famous4.jpg" alt="">
+                <div class="list-content">
+                  <h4>Rosie</h4>
+                  <p>ROSE</p>
+                </div>
+              </li>
+              <li class="list1">
+                <img src="image/famous5.jpg" alt="">
+                <div class="list-content">
+                  <h4>Ruby</h4>
+                  <p>제니</p>
+                </div>
+              </li>
+              <li class="list1">
+                <img src="image/famous6.jpg" alt="">
+                <div class="list-content">
+                  <h4>Whiplash</h4>
+                  <p>aespa</p>
+                </div>
+              </li>
+              <li class="list1">
+                <img src="image/famous7.jpg" alt="">
+                <div class="list-content">
+                  <h4>Die With A Smile</h4>
+                  <p>	
+                    Lady Gaga, Bruno Mars</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+  
+        <section id="below">
+          <div class="ticket">
+            <h2>HOT TICKET</h2>
+            <div class="tic-content">
+                <div class="front">
+                  <img src="image/ti1.jpg" alt="매디슨카운티의 다리">
+                  <p>뮤지컬 <br><b>〈매디슨 카운티의 다리〉 <br>티켓오픈 2025.04.03 14:00</b><br></p>
+                </div>
+                <div class="back">
+                  <img src="image/t12.jpg" alt="">
+                  <div class="tic-text">
+                    <span><mark>공연기간 </mark><br><em>2025.05.01 - 2025.07.13</em></span><br>
+                    <div class="tic-btn"><a href="#none">view more</a></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="magazine">
+            <h2>MELON INSIGHT 🎧</h2>
+            <div class="grop">
+              <div class="news mag1">
+                <img src="image/maga1.jpg" alt="매거진1">
+                <div class="news-text"><h4>Imagine Dragons,<br> 영화로 만나다</h4></div>
+              </div>
+              <div class="news mag2">
+                <img src="image/maga2.jpg" alt="매거진2">
+                <div class="news-text">
+                  <h4>4년 만에 정규 앨범으로 돌아온 Japanese Breakfast</h4>
+                  <p>Japanese Breakfast [For Melancholy Brunettes (& sad women)]</p>
+                </div>
+              </div>
+              <div class="news mag3">
+                <img src="image/maga3.jpg" alt="매거진3">
+                <div class="news-text">
+                  <h4>라이브클럽데이 10주년에 <br> 여러분을 초대합니다!</h4>
+                  <p>REAL LIVE IS BACK ! REAL LIVE IS HERE ! 'LIVE CLUB DAY'</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+    </div>
+      <footer>
+        <ul>
+          <li><a href="#none">이용약관</a></li>
+          <li><a href="#none">위치기반서비스이용약관</a></li>
+          <li><a href="#none">개인정보처리방침</a></li>
+          <li><a href="#none">청소년보호정책</a></li>
+          <li><a href="#none">제휴/프로모션문의</a></li>
+          <li><a href="#none">이메일주소무단수집거부</a></li>
+          <li><a href="#none">파트너센터</a></li>
+        </ul>
+        <address>(주)카카오엔터테인먼트  경기도 성남시 분당구 판교역로 235, 에이치스퀘어 N동 8, 9, 10층 공동대표이사 : 권기수, 장윤중 사업자등록번호 : 220-88-02594</address>
+        <p>통신판매업신고번호 : 2018-성남분당B-0004 사업자정보확인</p>
+        <span>문의전화 : 1566-7727 (평일 09:00-18:00, 유료) 이메일 : melon_info@kakaoent.com 호스팅서비스사업자 : (주)카카오엔터테인먼트 © Kakao Entertainment Corp.</span>
+      </footer>
+    
+
+
+  <!-- Script Source -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/index.js"></script>  
+
+</body>
+</html>
