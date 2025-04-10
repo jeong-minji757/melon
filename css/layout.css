@@ -239,7 +239,7 @@ main{
 
 /* 차트 항목 */
 .chart-tab{ flex: 1;
-padding-top: -20px;
+margin-top: -20px;
 cursor: pointer;}
 
 .chart-title{
