@@ -76,7 +76,6 @@ $(document).ready(function() {
     eventOldIdx = eventIdx; 
   };
 
-
 function eventAuto() {
 eventTimer = setInterval(function(){
   eventIdx = (eventOldIdx + 1) % eventCount;

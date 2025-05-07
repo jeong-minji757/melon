@@ -211,11 +211,18 @@ main{
   position: relative;
   margin-top: 30PX;
 }
+
 .main-img{
   display: none;
   position:absolute;
   top:0;
   left:0;
+  transition: 0.35s;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.main-img img{
+  animation: main-ani 3s forwards;
 }
 /* (2)첫번째 이미지만 보임 */
 .main-img:first-child{display: block;}
@@ -239,7 +246,7 @@ main{
 
 /* 차트 항목 */
 .chart-tab{ flex: 1;
-margin-top: -20px;
+padding-top: -20px;
 cursor: pointer;}
 
 .chart-title{

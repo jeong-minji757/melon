@@ -168,6 +168,11 @@
 }
 
 /* main________________________ */
+@keyframes main-ani{
+  0%{transform: scale(1); opacity: 0.8;}
+  50%{transform: scale(1.1);}
+  100%{transform: scale(1);}
+}
 /* 메인이미지 텍스트영역 */
 div .ma1, .ma2, .ma3, .ma4, .ma5 {
   display: flex;
@@ -513,7 +518,7 @@ div .ma1, .ma2, .ma3, .ma4, .ma5 {
   color: #fff;
   font-size: 25px;
 }
-.vote{
+.artist-title span{
   display: inline-block;
   position: relative;
   font-size: 25px;
@@ -528,7 +533,8 @@ div .ma1, .ma2, .ma3, .ma4, .ma5 {
 .artist-title a{
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0%;
+  display: inline-block;
   width: 60px;
   height: 60px;
   border-radius: 30px;
