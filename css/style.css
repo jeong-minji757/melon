@@ -519,21 +519,25 @@ div .ma1, .ma2, .ma3, .ma4, .ma5 {
   font-size: 25px;
 }
 .artist-title span{
-  display: inline-block;
   position: relative;
+  padding-left: 50px;
+  margin-top: 70px;
+  line-height: 60px;
+  z-index: 10;
+}
+.artist-title span em{
+  display: inline-block;
   font-size: 25px;
+  font-style: normal;
   color: #fff;
   width: 300px;
   height: 60px;
   padding-left: 80px;
-  margin-top: 40px;
-  line-height: 60px;
-  z-index: 10;
 }
 .artist-title a{
   position: absolute;
   top: 0;
-  left: 0%;
+  left: 0;
   display: inline-block;
   width: 60px;
   height: 60px;
@@ -546,6 +550,7 @@ div .ma1, .ma2, .ma3, .ma4, .ma5 {
 }
 .artist-title a::before{
   content: '▶';
+  font-size: 25px;
   position: absolute;
   top: -3px;
   left: 20px;
